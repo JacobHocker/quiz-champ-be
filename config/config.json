@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "justin06",
+    "database": "QuizChampBE-dev",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "QuizChampBE-test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "QuizChampBE-prod",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
