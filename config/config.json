@@ -17,7 +17,7 @@
     "username": "mysql",
     "password": "8d1nyvXVeO1AELru1ZkNOhygMxhbdGN5",
     "database": "mysql",
-    "host": "mysql-e98y:3306",
+    "host": "e98y:3306",
     "dialect": "mysql"
   }
 }
