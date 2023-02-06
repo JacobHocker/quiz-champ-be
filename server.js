@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+require("dotenv").config();
 
 
 app.use(express.json())
@@ -21,8 +22,18 @@ app.use("/categories", catRouter)
 const scoreRouter = require('./routes/Scores')
 app.use("/scores", scoreRouter)
 
-db.sequelize.sync().then(() => {
-        app.listen(2000, () => {
-        console.log("Server running on port 2000")
+// db.sequelize.sync().then(() => {
+//         app.listen(2000, () => {
+//         console.log("Server running on port 2000")
+//     })
+// })
+db.sequelize
+    .sync()
+    .then(() => {
+        app.listen(process.env.PORT || 2000, () => {
+            console.log("Server running on port 2000")
+        });
     })
-})
+    .catch((err) => {
+        console.log(err)
+    });
