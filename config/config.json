@@ -17,7 +17,7 @@
     "username": "root",
     "password": null,
     "database": "QuizChampBE-prod",
-    "host": "DATABASE_URL",
+    "host": "quiz-champ-db:3306",
     "dialect": "mysql"
   }
 }
