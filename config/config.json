@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "mysql",
-    "password": "8d1nyvXVeO1AELru1ZkNOhygMxhbdGN5",
-    "database": "mysql",
-    "host": "e98y:3306",
+    "username": "root",
+    "password": null,
+    "database": "QuizChampBE-prod",
+    "host": "DATABASE_URL",
     "dialect": "mysql"
   }
 }
