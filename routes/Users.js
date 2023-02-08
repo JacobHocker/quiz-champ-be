@@ -49,6 +49,10 @@ router.put('/crowns', async (req, res) => {
 router.get('/user', validateToken, (req, res) => {
     res.json(req.user);
 });
+router.get('/crown-leaders', async (req, res) => {
+    const users = await Users.findAll()
+    res.json(users)
+})
 router.get('/userInfo/:id', async (req, res) => {
     const id = req.params.id
     const user = await Users.findByPk(id);
