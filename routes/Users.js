@@ -53,6 +53,11 @@ router.get('/crown-leaders', async (req, res) => {
     const users = await Users.findAll()
     res.json(users)
 })
+router.get('/usernameInfo/:username', async (req, res) => {
+    const username = req.params.username
+    const user = await Users.findOne({ where: { username: username }})
+    res.json(user)
+})
 router.get('/userInfo/:id', async (req, res) => {
     const id = req.params.id
     const user = await Users.findByPk(id);
