@@ -13,6 +13,11 @@ router.get('/:id', async (req, res) => {
     const quiz = await Quizs.findByPk(id);
     res.json(quiz);
 });
+router.get('/categories/:id', async (req, res) => {
+    const id = req.params.id
+    const quizByCat = await Quizs.findAll({ where: { catId: id}})
+    res.json(quizByCat)
+})
 
 router.post("/", async (req, res) => {
     const quiz = req.body;
