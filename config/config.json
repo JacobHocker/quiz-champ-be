@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "mysql",
-    "password": "8d1nyvXVeO1AELru1ZkNOhygMxhbdGN5",
-    "database": "mysql",
-    "host": "quiz-champ-db",
+    "username": "sql9600027",
+    "password": "Zsg5miFZvb",
+    "database": "sql9600027",
+    "host": "sql9.freemysqlhostin.net",
     "dialect": "mysql",
     "port": "3306"
   }
