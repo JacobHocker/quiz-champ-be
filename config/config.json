@@ -17,7 +17,7 @@
     "username": "sql9600027",
     "password": "Zsg5miFZvb",
     "database": "sql9600027",
-    "host": "sql9.freemysqlhostin.net",
+    "host": "sql9.freemysqlhosting.net",
     "dialect": "mysql",
     "port": "3306"
   }
