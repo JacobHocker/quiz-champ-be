@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Quizs } = require("../models");
+const { Quizs, Sequelize } = require("../models");
 
 
 router.get("/", async (req, res) => {
@@ -18,6 +18,7 @@ router.get('/categories/:id', async (req, res) => {
     const quizByCat = await Quizs.findAll({ where: { catId: id}})
     res.json(quizByCat)
 })
+
 
 router.post("/", async (req, res) => {
     const quiz = req.body;
