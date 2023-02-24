@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Quizs, Sequelize } = require("../models");
+const { Quizs } = require("../models");
 
 
 router.get("/", async (req, res) => {
