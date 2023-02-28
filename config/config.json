@@ -14,11 +14,13 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "sql9600027",
-    "password": "Zsg5miFZvb",
-    "database": "sql9600027",
-    "host": "sql9.freemysqlhosting.net",
+    "username": "bf4cfbef694933",
+    "password": "0e8a9bfb",
+    "database": "heroku_b63b228579b6fa9",
+    "host": "us-cdbr-east-06.cleardb.net",
     "dialect": "mysql",
     "port": "3306"
   }
 }
+
+
