@@ -10,7 +10,7 @@ app.use(cors(
     credentials: true 
     },
     {
-        origin: '*'
+        origin: ['https://quiz-champ.onrender.com', 'https://quiz-champ-be.herokuapp.com/']
     }
     
     ))
